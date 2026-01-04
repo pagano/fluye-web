@@ -1,0 +1,306 @@
+---
+const { title = "Fluye BPM" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-spacer"></div>
+			<a href="https://login.fluye.ar" class="btn-login">Login</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="badge">🚧 En Construcción</div>
+		<div class="hero">
+			<img src="/logo.svg" alt="Fluye" class="hero-logo" />
+		</div>
+		<div class="container content">
+			<slot />
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>
+				📧 <a href="mailto:pagano@fluye.ar">pagano@fluye.ar</a> •
+				🐙 <a href="https://github.com/pagano/fluye" target="_blank">github.com/pagano/fluye</a>
+			</p>
+			<p class="tagline">Fluye 2026 - De Doors a Fluye: 25+ años de evolución en gestión de procesos empresariales.</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+<style>
+	:root {
+		--bg-dark: #0a0e1a;
+		--bg-darker: #060911;
+		--text-primary: #e8eef7;
+		--text-secondary: #b8c5d6;
+		--accent-blue: #4a8fd5;
+		--accent-blue-hover: #5ba4e8;
+		--border-color: #1a2332;
+		--card-bg: #0f1521;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+		line-height: 1.6;
+		color: var(--text-primary);
+		background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	/* Header */
+	header {
+		background: var(--card-bg);
+		border-bottom: 2px solid var(--border-color);
+		padding: 1rem 0;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(10px);
+	}
+
+	header .container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.header-spacer {
+		flex: 1;
+	}
+
+	.btn-login {
+		background: var(--accent-blue);
+		color: var(--text-primary);
+		padding: 0.5rem 1.5rem;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.2s;
+		border: 2px solid var(--accent-blue);
+	}
+
+	.btn-login:hover {
+		background: var(--accent-blue-hover);
+		border-color: var(--accent-blue-hover);
+		transform: translateY(-1px);
+		box-shadow: 0 4px 16px rgba(74, 143, 213, 0.4);
+	}
+
+	/* Badge */
+	.badge {
+		text-align: center;
+		padding: 0.75rem;
+		background: rgba(255, 193, 7, 0.15);
+		color: #ffc107;
+		font-weight: 600;
+		font-size: 0.95rem;
+		border-bottom: 2px solid rgba(255, 193, 7, 0.3);
+	}
+
+	/* Hero */
+	.hero {
+		text-align: center;
+		padding: 3rem 20px 2rem;
+	}
+
+	.hero-logo {
+		height: 270px;
+		width: auto;
+		display: inline-block;
+		opacity: 0.95;
+		max-width: 90vw;
+	}
+
+	/* Main Content */
+	main {
+		flex: 1;
+	}
+
+	.content {
+		padding: 2rem 20px 3rem;
+	}
+
+	.content :global(h1) {
+		font-size: 3rem;
+		font-weight: 800;
+		color: var(--text-primary);
+		margin-bottom: 0.5rem;
+		letter-spacing: -1px;
+		text-align: center;
+	}
+
+	.content :global(h2) {
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: var(--text-primary);
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+		border-bottom: 3px solid var(--border-color);
+		padding-bottom: 0.5rem;
+	}
+
+	.content :global(h3) {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--accent-blue);
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.content :global(p) {
+		margin-bottom: 1rem;
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: var(--text-secondary);
+	}
+
+	/* Center hero intro content (first p and blockquote before first h2) */
+	.content :global(h1 + p) {
+		text-align: center;
+		font-size: 1.2rem;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content :global(blockquote) {
+		border-left: 4px solid var(--accent-blue);
+		padding-left: 1.5rem;
+		margin: 1.5rem auto;
+		font-style: italic;
+		font-size: 1.2rem;
+		color: var(--accent-blue);
+		font-weight: 500;
+		text-align: center;
+		border-left: none;
+		max-width: 600px;
+	}
+
+	.content :global(h1 + p + blockquote + p) {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.content :global(ul) {
+		margin-left: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.content :global(li) {
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+		color: var(--text-secondary);
+	}
+
+	.content :global(strong) {
+		color: var(--text-primary);
+		font-weight: 700;
+	}
+
+	.content :global(a) {
+		color: var(--accent-blue);
+		text-decoration: none;
+		border-bottom: 1px solid rgba(74, 143, 213, 0.4);
+		transition: all 0.2s;
+	}
+
+	.content :global(a:hover) {
+		color: var(--accent-blue-hover);
+		border-bottom-color: var(--accent-blue-hover);
+	}
+
+	.content :global(code) {
+		background: var(--card-bg);
+		padding: 0.2rem 0.4rem;
+		border-radius: 3px;
+		font-size: 0.9em;
+		font-family: 'Courier New', monospace;
+		color: var(--accent-blue);
+		border: 1px solid var(--border-color);
+	}
+
+	/* Footer */
+	footer {
+		background: var(--bg-darker);
+		color: var(--text-secondary);
+		padding: 2rem 0;
+		margin-top: 4rem;
+		text-align: center;
+		border-top: 2px solid var(--border-color);
+	}
+
+	footer a {
+		color: var(--accent-blue);
+		text-decoration: none;
+		border-bottom: 1px solid rgba(74, 143, 213, 0.3);
+		transition: all 0.2s;
+	}
+
+	footer a:hover {
+		color: var(--accent-blue-hover);
+		border-bottom-color: var(--accent-blue-hover);
+	}
+
+	footer .tagline {
+		margin-top: 1rem;
+		font-size: 0.9rem;
+		opacity: 0.7;
+		font-style: italic;
+	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		.content :global(h1) {
+			font-size: 2rem;
+		}
+
+		.content :global(h2) {
+			font-size: 1.5rem;
+		}
+
+		.content {
+			padding: 2rem 20px;
+		}
+
+		.logo {
+			font-size: 1.25rem;
+		}
+
+		.btn-login {
+			padding: 0.4rem 1rem;
+			font-size: 0.9rem;
+		}
+	}
+</style>

@@ -5,7 +5,7 @@ title: "Fluye - BPM + CRM"
 
 # Fluye BPM + CRM
 
-Modelado y automatización procesos empresariales con enfoque ágil.
+Modelado y automatización de procesos empresariales con enfoque ágil.
 
 > Iterás rápido. Adaptás a cambios. Deployás en días.
 

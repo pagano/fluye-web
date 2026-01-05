@@ -39,6 +39,8 @@ Motor BPM (Business Process Management) que combina:
 
 - **Gestión documental:** Estructura jerárquica de carpetas y documentos
 - **Workflow programable:** Eventos síncronos/asíncronos en JavaScript
+- **Motor de formularios:** Bootstrap 5 con controles database-driven (generic6)
+- **Navegación SPA:** Single-page application con routing y state management
 - **Permisos granulares:** Control por usuario, grupo, carpeta y documento
 - **Búsqueda full-text:** Elastic Search integrado
 - **APIs modernas:** RESTful + GraphQL

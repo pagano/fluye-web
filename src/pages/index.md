@@ -1,9 +1,9 @@
 ---
 layout: ../layouts/Page.astro
-title: "Fluye - BPM + CRM"
+title: "Fluye - Agile BPM"
 ---
 
-# Fluye BPM + CRM
+# Fluye - Agile BPM
 
 Modelado y automatización de procesos empresariales con enfoque ágil.
 
@@ -33,6 +33,42 @@ Fluye es la tercera generación de negocios impulsados por Doors, el concepto BP
 - Compatible con instancias Doors de cualquier generación
 - Stack moderno: PostgreSQL, Keycloak, AWS, Elastic, Claude AI
 
+## ¿Por qué Fluye?
+
+### Agilidad Real
+
+Los procesos ágiles se adaptan mejor a los cambios del entorno/mercado:
+
+- **A medida:** Sin restricciones innecesarias de frameworks rígidos
+- **Iterativo:** Cambios sin recompilación, deploy inmediato
+- **Simple:** Pocos controles, más velocidad
+- **Transparente:** Si hay problemas, vas a los logs
+
+### Casos de Uso Reales
+
+**Edisur (Real Estate):**
+- Pipeline de ventas
+- HubSpot bidireccional
+- Gestión de Personal
+- Catálogo de productos
+
+**Vidacel (Salud / Chile):**
+- Gestión de clientes y oportunidades
+- Gestión de Laboratorios
+- Gestión de la Calidad
+
+**Ormay (Industria):**
+- WhatsApp Cnn: Recepción de solicitudes de garantía
+- Seguimiento de OST
+- Nuevos clientes
+- Integración con ERP
+
+**AG Naum (Grupo Empresario):**
+- Oportunidades unificadas (real estate, autos, tecnología)
+- Concesionarias: ventas y posventa
+- CRM multi-unidad de negocio
+- Gestión consolidada del grupo
+
 ## ¿Qué es Fluye?
 
 Motor BPM (Business Process Management) que combina:
@@ -55,6 +91,6 @@ Los SDKs públicos están bajo LGPL v3, permitiendo uso comercial sin requerir q
 
 **Website:** [fluye.ar](https://fluye.ar)
 
-**Email:** [pagano@fluye.ar](mailto:pagano@fluye.ar)
+**Email:** [info@fluye.ar](mailto:info@fluye.ar)
 
 **GitHub:** [github.com/pagano/fluye](https://github.com/pagano/fluye)

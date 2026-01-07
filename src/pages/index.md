@@ -27,11 +27,11 @@ Fluye es la tercera generación de negocios impulsados por Doors, el concepto BP
 - Fuerte presencia en real estate, concesionarios, industria: Edisur, Ormay, AGD, Protectia, Alican
 - Presencia en Chile
 
-**Fluye BPM (2025 - presente):**
+**Fluye BPM (2026 - presente):**
 - Próxima generación con IA y cloud-native
 - +15 clientes en migración
 - Compatible con instancias Doors de cualquier generación
-- Stack moderno: PostgreSQL, Keycloak, AWS, Elastic, Claude AI
+- Stack moderno: PostgreSQL, AWS Cognito, Elastic, Claude AI
 
 ## ¿Por qué Fluye?
 

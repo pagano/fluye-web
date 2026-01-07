@@ -1,29 +1,30 @@
-# Astro Starter Kit: Minimal
+# fluye-web
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Website público de Fluye BPM: [fluye.ar](https://fluye.ar)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Stack:** Astro + Markdown + Cloudflare Pages
 
 ## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
+│   ├── favicon.svg        # Waves del logo Fluye
+│   └── logo-fluye.svg     # Logo completo
 ├── src/
+│   ├── layouts/
+│   │   └── Page.astro     # Layout principal con branding
 │   └── pages/
-│       └── index.astro
+│       └── index.md       # Home page (Markdown)
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Content:** Todo el contenido está en Markdown (`src/pages/*.md`)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+**Branding:**
+- Colores: `#1e4c76`, `#547797`, `#708eac`, `#dbe7f6`
+- Tipografía: Sans-serif moderna
+- Dark theme con gradientes
 
 ## 🧞 Commands
 
@@ -38,6 +39,24 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🚀 Deploy
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Hosting:** Cloudflare Pages
+
+**Auto-deploy:** Push to `main` → deploy automático a fluye.ar
+
+**Preview:** Branches crean preview deployments automáticos
+
+## 📝 Content Updates
+
+Para actualizar contenido del sitio:
+
+1. Editar `src/pages/index.md` (Markdown)
+2. Commit y push a `main`
+3. Cloudflare Pages deploya automáticamente en ~1 minuto
+
+## 🔗 Links
+
+- **Website:** https://fluye.ar
+- **Repo código:** https://github.com/pagano/fluye (SDKs open-source)
+- **Documentación técnica:** Ver `fluye-core/design/` (repo privado)

@@ -1,96 +1,12 @@
 ---
 layout: ../layouts/Page.astro
-title: "Fluye - Agile BPM"
+title: "Fluye"
 ---
 
-# Fluye - Agile BPM
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; text-align: center;">
 
-Modelado y automatización de procesos empresariales con enfoque ágil.
+<img src="/logo-fluye.svg" alt="Fluye" style="width: 300px; max-width: 90%; margin-bottom: 3rem;" />
 
-> Iterás rápido. Adaptás a cambios. Deployás en días.
+## En construcción
 
-**20+ años de evolución. 200+ clientes. Desde bancos hasta pymes.**
-
-Fluye es la tercera generación de negocios impulsados por Doors, el concepto BPM creado por Jorge Pagano en el año 2002.
-
-## Historia
-
-**Gestar (2002 - presente):**
-- Segmento: Corporate, on-premise
-- +100 clientes, muchos de ellos aún activos
-- Fuerte presencia en banca: Banco Supervielle, Bco Itaú, Bco de Córdoba, Bco Santiago del Estero
-- Presencia internacional: México, Paraguay, Perú
-
-**Cloudy CRM (2013 - presente):**
-- Segmento: Pymes, cloud
-- +100 clientes activos
-- Fuerte presencia en real estate, concesionarios, industria: Edisur, Ormay, AGD, Protectia, Alican
-- Presencia en Chile
-
-**Fluye BPM (2026 - presente):**
-- Próxima generación con IA y cloud-native
-- +15 clientes en migración
-- Compatible con instancias Doors de cualquier generación
-- Stack moderno: PostgreSQL, AWS Cognito, Elastic, Claude AI
-
-## ¿Por qué Fluye?
-
-### Agilidad Real
-
-Los procesos ágiles se adaptan mejor a los cambios del entorno/mercado:
-
-- **A medida:** Sin restricciones innecesarias de frameworks rígidos
-- **Iterativo:** Cambios sin recompilación, deploy inmediato
-- **Simple:** Pocos controles, más velocidad
-- **Transparente:** Si hay problemas, vas a los logs
-
-### Casos de Uso Reales
-
-**Edisur (Real Estate):**
-- Pipeline de ventas
-- HubSpot bidireccional
-- Gestión de Personal
-- Catálogo de productos
-
-**Vidacel (Salud / Chile):**
-- Gestión de clientes y oportunidades
-- Gestión de Laboratorios
-- Gestión de la Calidad
-
-**Ormay (Industria):**
-- WhatsApp Cnn: Recepción de solicitudes de garantía
-- Seguimiento de OST
-- Nuevos clientes
-- Integración con ERP
-
-**AG Naum (Grupo Empresario):**
-- Oportunidades unificadas (real estate, autos, tecnología)
-- Concesionarias: ventas y posventa
-- CRM multi-unidad de negocio
-- Gestión consolidada del grupo
-
-## ¿Qué es Fluye?
-
-Motor BPM (Business Process Management) que combina:
-
-- **Gestión documental:** Estructura jerárquica de carpetas y documentos
-- **Workflow programable:** Eventos síncronos/asíncronos en JavaScript
-- **Motor de formularios:** Bootstrap 5 con controles database-driven (generic6)
-- **Navegación SPA:** Single-page application con routing y state management
-- **Permisos granulares:** Control por usuario, grupo, carpeta y documento
-- **Búsqueda full-text:** Elastic Search integrado
-- **APIs modernas:** RESTful + GraphQL
-
-## Licencia
-
-**SDKs Open-Source:** LGPL v3 (GNU Lesser General Public License)
-
-Los SDKs públicos están bajo LGPL v3, permitiendo uso comercial sin requerir que tu aplicación sea open-source.
-
-## Contacto
-
-**Website:** [fluye.ar](https://fluye.ar)
-
-**Email:** [info@fluye.ar](mailto:info@fluye.ar)
-
-**GitHub:** [github.com/pagano/fluye](https://github.com/pagano/fluye)
+</div>
